@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wellgrow Menu</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#000;
+    font-family:Arial,sans-serif;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+/* logo */
+
+.wellgrow-logo{
+    position:fixed;
+    right:18px;
+    bottom:18px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    overflow:hidden;
+    box-shadow:
+    0 0 8px rgba(255,255,255,.25),
+    0 0 18px rgba(255,255,255,.12),
+    0 6px 18px rgba(0,0,0,.25);
+    z-index:999;
+    opacity:0.75;
+    transition:.3s ease;
+}
+
+.wellgrow-logo:hover{
+    opacity:1;
+    transform:scale(1.08);
+}
+
+.wellgrow-logo img{
+    width:100%;
+    display:block;
+}
+
+.top-btn{
+    position:fixed;
+    right:22px;
+    bottom:80px;
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+    background:rgba(255,255,255,0.25);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,.2);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+    font-size:20px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
+
+    opacity:0;
+    pointer-events:none;
+
+    transform:translateY(15px);
+
+    transition:.25s ease;
+}
+
+.top-btn.show{
+    opacity:1;
+    pointer-events:auto;
+    transform:translateY(0);
+}
+.maps-btn{
+    position:fixed;
+    right:22px;
+    bottom:130px;
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+    background:rgba(255,255,255,0.25);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,.2);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+    font-size:20px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
+
+    opacity:0;
+    pointer-events:none;
+
+    transform:translateY(15px);
+
+    transition:.25s ease;
+}
+
+.maps-btn.show{
+    opacity:1;
+    pointer-events:auto;
+    transform:translateY(0);
+}
+
+.instagram-btn{
+    position:fixed;
+    right:22px;
+    bottom:180px;
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+    background:rgba(255,255,255,0.25);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,.2);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+    font-size:20px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
+
+    opacity:0;
+    pointer-events:none;
+
+    transform:translateY(15px);
+
+    transition:.25s ease;
+}
+
+.instagram-btn.show{
+    opacity:1;
+    pointer-events:auto;
+    transform:translateY(0);
+}
+.instagram-btn img{
+    width:22px;
+    height:22px;
+    object-fit:contain;
+}
+
+    
+    .whatsapp-btn{
+    position:fixed;
+    right:22px;
+    bottom:230px;
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+    background:rgba(255,255,255,0.25);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,.2);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+    font-size:20px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
+
+    opacity:0;
+    pointer-events:none;
+
+    transform:translateY(15px);
+
+    transition:.25s ease;
+}
+
+.whatsapp-btn.show{
+    opacity:1;
+    pointer-events:auto;
+    transform:translateY(0);
+}
+    
+</style>
+
+</head>
+
+<body>
+
+<img src="1.png">
+<img src="2.png">
+<img src="3.png">
+<img src="4.png">
+<img src="5.png">
+<img src="6.png">
+<img src="7.png">
+<img src="8.png">
+<img src="9.png">
+<img src="10.png">
+<img src="11.png">
+<img src="12.png">
+<img src="13.png">
+<img src="14.png">
+<img src="15.png">
+<img src="16.png">
+    
+<a href="#"
+   class="top-btn"
+   id="topBtn"
+   onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+⬆
+</a>
+<a href="https://share.google/YSjF7dEFzJCeKEadr"
+   target="_blank"
+   class="maps-btn"
+   id="mapsBtn">
+📍
+</a>
+
+<a href="https://www.instagram.com/wellgrow.coffee"
+   target="_blank"
+   class="instagram-btn"
+   id="instagramBtn">
+    <img src="instagram.png" alt="Instagram">
+</a>
+
+<a href="https://wa.me/6281212898383"
+   target="_blank"
+   class="whatsapp-btn"
+   id="whatsappBtn">
+💬
+</a>
+    
+<!-- logo Wellgrow -->
+<a href="https://www.instagram.com/wellgrow.coffee" target="_blank" class="wellgrow-logo">
+    <img src="logo.png" alt="Wellgrow">
+</a>
+
+ <script>
+const logo = document.querySelector(".wellgrow-logo");
+const topBtn = document.getElementById("topBtn");
+const mapsBtn = document.getElementById("mapsBtn");
+const instagramBtn = document.getElementById("instagramBtn");
+const whatsappBtn = document.getElementById("whatsappBtn"); 
+let menuOpen = false;
+
+logo.addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    menuOpen = !menuOpen;
+
+    if(menuOpen){
+
+        logo.style.transform="rotate(45deg)";
+        logo.style.opacity="1";
+        topBtn.classList.add("show");
+        mapsBtn.classList.add("show");
+        instagramBtn.classList.add("show");
+        whatsappBtn.classList.add("show");
+    }else{
+
+        logo.style.transform="rotate(0deg)";
+        logo.style.opacity="0.75";
+        topBtn.classList.remove("show");
+        mapsBtn.classList.remove("show");
+        instagramBtn.classList.remove("show");
+        whatsappBtn.classList.remove("show");
+    }
+
+});
+</script>
+    
+</body>
+</html>
