@@ -201,6 +201,43 @@ img{
     pointer-events:auto;
     transform:translateY(0);
 }
+
+.venue-btn{
+    position:fixed;
+    right:22px;
+    bottom:280px;
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+    background:rgba(255,255,255,0.25);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,.2);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+    font-size:20px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
+
+    opacity:0;
+    pointer-events:none;
+
+    transform:translateY(15px);
+
+    transition:.25s ease;
+}
+
+.venue-btn.show{
+    opacity:1;
+    pointer-events:auto;
+    transform:translateY(0);
+}
     
 </style>
 
@@ -251,6 +288,12 @@ img{
    id="whatsappBtn">
 💬
 </a>
+
+<a href="https://wellgrowcoffeekitchen-menu.github.io/wellgrow-venue/"
+   class="venue-btn"
+   id="venueBtn">
+    🏛️
+</a>
     
 <!-- logo Wellgrow -->
 <a href="https://www.instagram.com/wellgrow.coffee" target="_blank" class="wellgrow-logo">
@@ -263,6 +306,7 @@ const topBtn = document.getElementById("topBtn");
 const mapsBtn = document.getElementById("mapsBtn");
 const instagramBtn = document.getElementById("instagramBtn");
 const whatsappBtn = document.getElementById("whatsappBtn"); 
+const venueBtn = document.getElementById("venueBtn");
 let menuOpen = false;
 
 logo.addEventListener("click", function(e){
@@ -279,6 +323,8 @@ logo.addEventListener("click", function(e){
         mapsBtn.classList.add("show");
         instagramBtn.classList.add("show");
         whatsappBtn.classList.add("show");
+        venueBtn.classList.add("show");
+
     }else{
 
         logo.style.transform="rotate(0deg)";
@@ -287,6 +333,8 @@ logo.addEventListener("click", function(e){
         mapsBtn.classList.remove("show");
         instagramBtn.classList.remove("show");
         whatsappBtn.classList.remove("show");
+        venueBtn.classList.remove("show");
+
     }
 
 });
